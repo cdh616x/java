@@ -3,14 +3,14 @@ import java.lang.Math;
 import java.util.Scanner;
 
 public class MethodPractice {
-  static void words() {
+  static void timesTwo() {
     Scanner UserInput = new Scanner(System.in);
-    System.out.print("What is your number? ");
-    int num1 = UserInput.nextByte();//input method .nextLine gives the entire character input from the user
-    int product = num1 * 2;
+    System.out.print("What is the degrees in Centigrade? ");
+    int celc = UserInput.nextInt();//input method .nextLine gives the entire character input from the user
+    double product = (double)celc * (double)9 / 5 + 32;
     System.out.println(product);
   }
   public static void main(String[] args) {
-    words();
+    timesTwo();
   }
 }
